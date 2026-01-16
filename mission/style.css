@@ -1,11 +1,16 @@
 body {
     font-size: 18px;
-    font-family: Georgia, 'Times New Roman', Times, serif
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#content{
+    border: 2px solid black;
+    padding: 120px;
 }
 
 h1 {
-    font-size: 2.0em;
-    font-weight: normal;
+    font-size: 3.0em;
+    font-weight: bold;
     text-transform: uppercase;
 }
 
@@ -14,8 +19,10 @@ h1, h2 {
 }
 
 #content {
-    max-width: 60%;
+    width: 8.5in;
+    height: 8in;
     margin: 40px auto;
+    border: 1px solid black;
 }
 
 h2 {
@@ -23,7 +30,8 @@ h2 {
     color: #2c8aee;
     font-weight: normal;
     text-transform: uppercase;
-    margin-bottom: 0px;
+    margin-bottom: 10px;
+    letter-spacing: 8px;
 }
 
 #rules p {
@@ -38,12 +46,10 @@ hr {
 
 .container {
     display: flex;
-    width: 80px;
-    height: 80px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 30%;
+    height: 100px;
+    width: 100px;
     padding-top: 40px;
+    margin: 0 300px;
 }
 
 #description {
