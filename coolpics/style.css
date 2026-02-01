@@ -23,27 +23,59 @@ section {
 nav a {
     display: none;
     color: white;
-    padding: 20px;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+nav.show a {
+    display: block;
 }
 
 div {
     padding: 20px;
 }
 
-.galarey {
+.gallery {
     display: grid;
     grid-template-columns: 1fr;
 }
 
-#menu {
+.menu {
+    font-size: 1rem;
     padding-top: 0;
     padding-bottom: 0;
     cursor: pointer;
+    color: white;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid black;
 }
 
 img {
     border: 5px solid white;
     box-shadow: 5px 5px 10px black;
+    object-fit: cover;
+}
+
+dialog img {
+    width: 90%;
+    display: block;
+    margin: 20vh auto;
+    border: none;
+}
+
+dialog {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.75);
+}
+
+.close-viewer {
+    position: absolute;
+    top: 13vh;
+    padding: 3px 6px;
+    font-size: 1.5em;
+    cursor: pointer;
 }
 
 footer {
@@ -53,19 +85,23 @@ footer {
 }
 
 @media screen and (min-width: 850px) {
-    .galarey {
+    .gallery {
         grid-template-columns: 1fr 1fr;
         max-width: 800px;
         margin: 0 auto;
     }
 
     img {
-        max-width: 300px
+        max-width: 300px;
+    }
+
+    dialog img {
+        max-width: 600px;
     }
 }
 
 @media screen and (min-width: 1300px) {
-    .galarey {
+    .gallery {
         grid-template-columns: 1fr 1fr 1fr;
         max-width: 1000px;
         margin: 0 auto;
@@ -75,7 +111,7 @@ footer {
         max-width: 250px;
     }
 
-    #menu {
+    .menu {
         display: none;
     }
 
@@ -83,5 +119,23 @@ footer {
         display: inline;
     }
 
+    dialog img {
+        max-width: 800px;
+        margin: 15vh auto;
+    } 
+
+    .close-viewer {
+        position: absolute;
+        right: 15vh;
+    }
+
+    .viewer {
+        margin: 50px;
+        padding: 50px;
+    }
+
+    .viewer img {
+        max-width: 800px;
+    }
 
 }
