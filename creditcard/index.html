@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Credit Card Form">
+        <meta name="author" content="Preston Dillard">
+        <title>Credit Card Form</title>
+        <link rel="icon" href="favicon.ico">
+        <link rel="stylesheet" href="style.css">
+        <script src="main.js" defer></script>
+    </head>
+    <body>
+
+    <form id="paymentForm" novalidate>
+        <div class="card-container">
+
+            <div class="card-front">
+                <div class="card-top">
+                    <span class="total">TOTAL: $199</span>
+                    <span class="card-emoji">💳</span>
+                </div>
+
+                <div class="field full">
+                    <label for="cardNumber">CARD NUMBER</label>
+                    <input type="text" id="cardNumber" maxlength="16" placeholder="1234123412341234">
+                </div>
+
+                <div class="field full">
+                    <label for="cardHolder">CARD HOLDER</label>
+                    <input type="text" id="cardHolder" placeholder="John Doe">
+                </div>
+
+                <div id="cardExpiration" class="field expiration">
+                    <label id="expirationDate">EXPIRATION</label>
+                    <input type="text" id="month" name="expMonth" placeholder="MM" maxlength="2" aria-labelledby="expirationDate">
+                    <input type="text" id="year" name="expYear" placeholder="YY" maxlength="2" aria-labelledby="expirationDate">
+                </div>
+            </div>
+
+            <div class="card-back">
+                <div class="stripe"></div>
+                <div class="cvc-field">
+                    <label for="cvc">CVC/CVV</label>
+                    <input type="text" id="cvc" maxlength="3" placeholder="xxx">
+                </div>
+            </div>
+
+        </div>
+
+        <button type="submit">Submit</button>
+        <p id="message"></p>
+    </form>
+    </body>
+</html>
