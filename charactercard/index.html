@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Swamp Beast Diplomat Character Card</title>
+        <meta name="description" content="A JavaScript character card demonstrating objects with properties and methods.">
+        <meta name="author" content="Preston Dillard">
+
+        <!-- Open Graph -->
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Swamp Beast Diplomat Character Card">
+        <meta property="og:description" content="A JavaScript object character card with level and health mechanics.">
+        <meta property="og:url" content="https://yourgithubusername.github.io/charactercard/">
+        <meta property="og:image" content="https://yourgithubusername.github.io/charactercard/swamp-beast.jpg">
+
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Swamp Beast Diplomat Character Card">
+        <meta name="twitter:description" content="A JavaScript object character card with level and health mechanics.">
+        <meta name="twitter:image" content="https://yourgithubusername.github.io/charactercard/swamp-beast.jpg">
+
+        <link rel="icon" href="favicon.ico">
+        <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+        <link rel="stylesheet" href="style.css">
+        <script src="main.js" defer></script>
+    </head>
+
+    <body>
+
+        <div class="card">
+            <img class="image" src="swamp-beast.jpg" alt="Swamp Beast Diplomat">
+            <div class="name" id="name"></div>
+            <div class="stats">
+                <p id="class"></p>
+                <p id="level"></p>
+                <p id="health"></p>
+            </div>
+            <div class="buttons">
+                <button onclick="attackCharacter()">Attack</button>
+                <button onclick="levelCharacter()">Level Up</button>
+            </div>
+        </div>
+    </body>
+</html>
