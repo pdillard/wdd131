@@ -1,0 +1,227 @@
+body {
+  margin: 0;
+  background: #f4f4f4;
+  font-family: Arial, sans-serif;
+}
+
+h1, h2 {
+  font-family: 'Amatic SC', cursive;
+}
+
+/* ── HEADER ── */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding: 25px 20px;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-area img {
+  width: 40px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.2rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.search {
+  display: flex;
+  width: 100%;
+  max-width: 560px;
+}
+
+.search input {
+  flex: 1;
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  border-right: none;
+  font-size: 14px;
+  outline: none;
+  border-radius: 0;
+}
+
+.search button {
+  border: 1px solid #ccc;
+  background: white;
+  padding: 10px 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search img {
+  width: 18px;
+}
+
+/* ── MAIN ── */
+main {
+  display: flex;
+  justify-content: center;
+  padding: 30px 15px;
+}
+
+/* ── RECIPE CARD ── */
+.recipe {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;       /* clips image to card's rounded corners */
+  max-width: 560px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* food photo — full-width, no side gaps */
+.recipe > img {
+  width: 100%;
+  display: block;
+  border-radius: 0;       /* card overflow:hidden handles rounding */
+}
+
+/* text section below the image */
+.recipe-info {
+  padding: 12px 15px 18px;
+  text-align: left;
+}
+
+.tag {
+  background: #e8e8e8;
+  padding: 3px 10px;
+  font-size: 12px;
+  border-radius: 3px;
+  display: inline-block;
+  border: 1px solid #ccc;
+}
+
+h2 {
+  font-size: 1.9rem;
+  margin: 8px 0 4px 0;
+  color: #4a90d9;
+}
+
+.rating {
+  font-size: 22px;
+  display: block;
+  margin: 4px 0 0 0;
+}
+
+.description {
+  display: none;
+  font-size: 14px;
+  line-height: 1.55;
+  color: #333;
+  margin: 8px 0 0 0;
+}
+
+/* ── FOOTER ── */
+footer {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid #555;
+  border-radius: 6px;
+}
+
+.social img {
+  width: 20px;
+  height: 20px;
+}
+
+footer p {
+  margin: 0;
+  font-size: 13px;
+}
+
+footer a {
+  color: #4a90d9;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* ── DESKTOP (768px+) ── */
+@media (min-width: 768px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 16px 40px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .search {
+    max-width: 420px;
+  }
+
+  /* Card switches to horizontal row */
+  .recipe {
+    flex-direction: row;
+    max-width: 900px;
+    overflow: hidden;
+    align-items: stretch;
+    border-radius: 8px;
+  }
+
+  /* Image on the left, fixed width, fills full height */
+  .recipe > img {
+    width: 340px;
+    min-width: 340px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0;
+  }
+
+  /* Info panel on the right */
+  .recipe-info {
+    flex: 1;
+    padding: 20px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .tag {
+    align-self: flex-start;
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin: 10px 0 6px 0;
+  }
+
+  .description {
+    display: block;
+  }
+}
