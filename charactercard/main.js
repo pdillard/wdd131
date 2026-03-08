@@ -31,12 +31,12 @@ function updateCard() {
     document.getElementById("health").textContent = "Health: " + character.health;
 }
 
-function attackCharacter() {
+document.getElementById("attackBtn").addEventListener("click", function () {
     character.attacked();
-}
+});
 
-function levelCharacter() {
+document.getElementById("levelBtn").addEventListener("click", function () {
     character.levelUp();
-}
+});
 
 updateCard();
