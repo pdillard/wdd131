@@ -12,16 +12,15 @@
         <meta property="og:description" content="Delicious homemade recipes including apple crisp and more.">
         <meta property="og:url" content="https://example.com">
         <meta property="og:image" content="social-preview-image.png">
-
         <!-- X Card -->
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:title" content="Simple Recipe Book">
         <meta name="twitter:description" content="Delicious homemade recipes including apple crisp and more.">
         <meta name="twitter:image" content="social-preview-image.png">
-
         <link rel="icon" href="/favicon.ico">
         <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
         <link rel="stylesheet" href="style.css">
+        <script src="main.js" defer></script>
         <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
     </head>
     <body>
@@ -31,43 +30,30 @@
                 <h1>Recipe Book</h1>
             </div>
             <div class="search">
-                <input type="text" placeholder="Find a recipe">
-                <button>
+                <input type="text" id="search-input" placeholder="Find a recipe" aria-label="Find a recipe">
+                <button id="search-btn" aria-label="Search">
                 <img src="images/search.svg" alt="search">
                 </button>
             </div>
         </header>
-        <main>
-            <article class="recipe">
-                <img src="images/apple-crisp.jpg" alt="apple crisp">
-                <div class="recipe-info">
-                    <span class="tag">dessert</span>
-                    <h2>Apple Crisp</h2>
-                    <span class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
-                        <span aria-hidden="true">⭐</span>
-                        <span aria-hidden="true">⭐</span>
-                        <span aria-hidden="true">⭐</span>
-                        <span aria-hidden="true">⭐</span>
-                        <span aria-hidden="true">☆</span>
-                    </span>
-                    <p class="description">
-                    Warm apple crisp topped with a buttery oat crumble. A classic fall dessert that is easy to make and perfect with vanilla ice cream.
-                    </p>
-                </div>
-            </article>
-        </main> 
+
+        <main id="recipe-list">
+        <!-- Recipes rendered by main.js -->
+        </main>
+
         <footer>
-            <div class="social">
-                <!-- Social media icons provided under CC from https://www.iconfinder.com/AlfredoCreates  -->
-                <a href="#"><img src="images/instagram_icon.svg" alt="instagram icon"></a>
-                <a href="#"><img src="images/youtube_icon.svg" alt="youtube icon"></a>
-                <a href="#"><img src="images/pinterest_icon.svg" alt="pinterest icon"></a>
+            <div class="footer-inner">
+                <div class="social">
+                    <!-- Social media icons provided under CC from https://www.iconfinder.com/AlfredoCreates -->
+                    <a href="#"><img src="images/instagram_icon.svg" alt="instagram icon"></a>
+                    <a href="#"><img src="images/youtube_icon.svg" alt="youtube icon"></a>
+                    <a href="#"><img src="images/pinterest_icon.svg" alt="pinterest icon"></a>
+                </div>
+                <p>
+                    <a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">
+                        Recipe icons created by Freepik - Flaticon</a>
+                </p>
             </div>
-            <p>
-                <a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">
-                Recipe icons created by Freepik - Flaticon
-                </a>
-            </p>
         </footer>
     </body>
 </html>
