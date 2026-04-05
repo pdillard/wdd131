@@ -1,0 +1,17 @@
+<svg width="220" height="60" viewBox="0 0 220 60" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="38" height="54" rx="8" fill="#EF4444"/>
+  <rect x="4" y="4" width="30" height="42" rx="4" fill="#1a2437"/>
+  <rect x="7" y="9"  width="24" height="3" rx="1.5" fill="#2d3f52"/>
+  <rect x="7" y="16" width="24" height="3" rx="1.5" fill="#2d3f52"/>
+  <rect x="7" y="23" width="24" height="3" rx="1.5" fill="#2d3f52"/>
+  <rect x="7" y="30" width="24" height="3" rx="1.5" fill="#2d3f52"/>
+  <polyline points="7,37 11,27 15,30 19,19 23,22 27,10 31,13 31,10" fill="none" stroke="#22C55E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="31" cy="10" r="2.2" fill="#22C55E"/>
+  <rect x="7"  y="39" width="8"  height="4" rx="1.5" fill="#EF4444"/>
+  <rect x="17" y="39" width="6"  height="4" rx="1.5" fill="#2d3f52"/>
+  <rect x="25" y="39" width="6"  height="4" rx="1.5" fill="#2d3f52"/>
+  <rect x="14" y="50" width="10" height="3" rx="1.5" fill="#2d3f52"/>
+
+  <text x="48" y="36" font-family="'Roboto Condensed', 'Arial Narrow', sans-serif" font-weight="700" font-size="28" fill="#ffffff" letter-spacing="0.5">FitTrack</text>
+  <text x="49" y="50" font-family="'Open Sans', Arial, sans-serif" font-weight="400" font-size="11" fill="rgba(255,255,255,0.5)" letter-spacing="2">WORKOUT TRACKER</text>
+</svg>
